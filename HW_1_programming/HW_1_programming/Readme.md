@@ -1,4 +1,19 @@
-# Homework-1
+# Submission instructions
+
+* Due date and time: September 21st (Monday), 11:59 pm ET
+
+* Expected time commitment: 4-8 hrs
+
+* Carmen submission: 
+1) Submit one .py file with the search algorithms you implemented: `search.py`
+2) Submit a `collaboration.txt` and list with whom you have discussed about the homework (see more details below). 
+
+Please use python3 and write your own solutions from scratch. Do not import any packages yourself except for those we have included and specified.
+
+* Collaboration: You may discuss with your classmates. However, you need to write your own solutions and submit separately. In your submission, you need to list with whom you have discussed about the homework in a .txt file `collaboration.txt`. Please list each classmate’s name.number (e.g., chao.209) as a row in the .txt file. That is, if you discussed with two classmates, your .txt file will have two rows. If you did not discuss with your classmates, just submit an empty `collaboration.txt`. Please consult the syllabus for what is and is not acceptable collaboration.
+
+
+# Homework 1
 
 Download or clone this repository. This code, and the idea for the assignment, comes from [UC Berkeley](https://inst.eecs.berkeley.edu//~cs188/pacman/home.html).
 
@@ -94,12 +109,7 @@ python3 py/pacman.py -l mediumMaze -p SearchAgent -a fn=astar,heuristic=manhatta
 
 ```
 
-## Submission
-
-* Submit one file to Carmen: `search.py`
-* Expected time commitment: 4-8 hrs
-* Due: Friday, Sept. 21, 11:59pm
-
+## Other information
 
 ### Evaluation
 
