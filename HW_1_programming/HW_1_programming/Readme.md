@@ -1,4 +1,6 @@
-# Submission instructions
+# Homework 1
+
+## Submission instructions
 
 * Due date and time: September 21st (Monday), 11:59 pm ET
 
@@ -13,7 +15,7 @@ Please use python3 and write your own solutions from scratch. Do not import any 
 * Collaboration: You may discuss with your classmates. However, you need to write your own solutions and submit separately. In your submission, you need to list with whom you have discussed about the homework in a .txt file `collaboration.txt`. Please list each classmate’s name.number (e.g., chao.209) as a row in the .txt file. That is, if you discussed with two classmates, your .txt file will have two rows. If you did not discuss with your classmates, just submit an empty `collaboration.txt`. Please consult the syllabus for what is and is not acceptable collaboration.
 
 
-# Homework 1
+## Introduction
 
 Download or clone this repository. This code, and the idea for the assignment, comes from [UC Berkeley](https://inst.eecs.berkeley.edu//~cs188/pacman/home.html).
 
@@ -37,7 +39,7 @@ python3 py/pacman.py --layout tinyMaze --pacman GoWestAgent
 python3 py/pacman.py --layout tinyMaze --pacman GoWestAgent
 ```
 
-## Task 1 (9 pts)
+## Task 1 (10 pts)
 
 Open the file `py/search.py` and find the function [`depthFirstSearch`](./py/search.py#L70). 
 
@@ -49,7 +51,7 @@ You can test it with pacman by running the following command:
 python3 py/pacman.py -l mediumMaze -p SearchAgent -a fn=dfs
 ```
 
-## Task 2 (8 pts)
+## Task 2 (10 pts)
 
 Open the file `py/search.py` and and find the function [`breadthFirstSearch`](./py/search.py#L90). 
 
@@ -64,7 +66,7 @@ python3 py/pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
 (Note that this should be simple if you've completed Task 1.)
 
 
-## Task 3 (8 pts)
+## Task 3 (10 pts)
 
 Open the file `py/search.py` and find the function  [`uniformCostSearch`](./py/search.py#L96). 
 
