@@ -39,6 +39,9 @@ python3 py/pacman.py --layout tinyMaze --pacman GoWestAgent
 python3 py/pacman.py --layout tinyMaze --pacman GoWestAgent
 ```
 
+### Implementation
+Please implement the graph search version, not the tree search version of each algorithm. That is, you will create a closeset, and you will not expand the already expanded states again.
+
 ## Task 1 (10 pts)
 
 Open the file `py/search.py` and find the function [`depthFirstSearch`](./py/search.py#L70). 
