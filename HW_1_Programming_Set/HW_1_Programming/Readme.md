@@ -48,7 +48,7 @@ python3 py/pacman.py --layout tinyMaze --pacman GoWestAgent
 python3 py/autograder.py
 ```
 
-* We note that, the provided commands are designed to work with Mac/Linux with Python version 3. If your are using Windows (like me!), you can use the COMMAND LINE (CMD), and make the following changes: (1) Please use "\" instead of "/" while specifying the path to the file. (2) If it still does not work, you may try replacing "python3" with "py -3" in the command you're executing on CMD. Example command that works for us: "py -3 py\autograder.py"
+* We note that, the provided commands are designed to work with Mac/Linux with Python version 3. If your are using Windows (like me!), you can use the COMMAND LINE (CMD), and make the following changes: (1) Please use \ instead of / while specifying the path to the file. (2) If it still does not work, you may try replacing "python3" with "py -3" in the command you're executing on CMD. Example command that works for us: "py -3 py\autograder.py"
 
 ## Task 1 (10 pts)
 
