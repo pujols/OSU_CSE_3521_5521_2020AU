@@ -113,7 +113,7 @@ print(best)
 
 Open the file `py/search.py` and find the function  [`aStarSearch`](./py/search.py#L109). 
 
-Finish the implementation of A* search. You can use the argument heuristic as a function: `dist = heuristic(state, problem)`
+Finish the implementation of A* search. You can use the argument heuristic as a function: `dist = heuristic(state, problem)` eg. try `h_start = heuristic(problem.getStartState(), problem); print(h_start)` 
 
 You can test it with pacman by running the following command: 
 
