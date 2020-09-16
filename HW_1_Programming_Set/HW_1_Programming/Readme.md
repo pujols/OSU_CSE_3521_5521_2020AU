@@ -50,6 +50,9 @@ python3 py/autograder.py
 
 * We note that, the provided commands are designed to work with Mac/Linux with Python version 3. If your are using Windows (like me!), you can use the COMMAND LINE (CMD), and make the following changes: (1) Please use \ instead of / while specifying the path to the file. (2) If it still does not work, you may try replacing "python3" with "py -3" in the command you're executing on CMD. Example command that works for us: "py -3 py\autograder.py"
 
+* We suggest that you run the code on Command Line. You may use editors like PyCharm to write your code.
+
+
 ## Task 1 (10 pts)
 
 Open the file `py/search.py` and find the function [`depthFirstSearch`](./py/search.py#L70). 
@@ -92,10 +95,9 @@ python3 py/pacman.py -l mediumMaze -p SearchAgent -a fn=ucs
 (Note that adapting your implementation of DFS or BFS maybe useful for UCS.)
 
 
-
 ### Useful Python code
 
-Task 3 above asks you to implement UCS for Pacman. So, you want to have an openset that's ordered by a heuristic value. Python has `heaps` for this purpose. Whenever you `pop` a value from a heap, the lowest value comes out. Use a tuple to keep the value and other data together.
+Task 3 above asks you to implement UCS for Pacman. So, you want to have an openset that's ordered by a heuristic value. You may use `heaps` for this purpose. Whenever you `pop` a value from a heap, the lowest value comes out. Use a tuple to keep the value and other data together.
 
 ```
 from util import heappush, heappop
@@ -107,6 +109,8 @@ heappush(openset, (9, "quux"))
 best = heappop(openset)
 print(best)
 ```
+
+Alternatively, you can use the `PriorityQueue` data structures provided to you in `py/util.py`!
 
 
 ## Task 4 (10 pts)
@@ -136,7 +140,7 @@ Your code will be autograded for technical correctness. Please do not change the
 
 Keep these things in mind while working on your solutions!
 * All of your search functions need to return a list of actions that will lead the agent from the start to the goal. These actions all have to be legal moves (valid directions, no moving through walls).
-* Make sure to use the `Stack`, `Queue` and `PriorityQueue` data structures provided to you in `py/util.py`! These data structure implementations have particular properties which are required for compatibility with the autograder.
+* Make sure to use the `Stack`, `Queue`, `PriorityQueue`, or the `heaps` (as mentioned in Task 3, Useful Python code) data structures provided to you in `py/util.py`! These data structure implementations have particular properties which are required for compatibility with the autograder. Note that, you can use `PriorityQueue` or `heaps` to implement `Stack` and `Queue`.
 * Get familiar with the methods in the `SearchProblem` class in `py/search.py`! You'll need to use these methods as part of your search implementations.
 * Remember that lists in Python are passed by reference; if you're seeing actions show up in a list that shouldn't be there, make sure you're copying your actions to a new list every time!
 * The autograder is not the final word! It is very possible to correctly implement these algorithms, but have the autograder consider it wrong because you didn't use the right data structures or methods. Final grades will be assigned by examining your implementation, not just using the autograder output.
