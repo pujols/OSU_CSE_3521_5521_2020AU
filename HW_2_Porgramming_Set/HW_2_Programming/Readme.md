@@ -27,7 +27,7 @@ Submit a .zip file named `name.number.zip` (e.g., `chao.209.zip`) with the follo
 
 * Please use python3 and write your own solutions from scratch. 
 
-* $$Caution! python and NumPy's indices start from 0. That is, to get the first element in a vector, the index is 0 rather than 1.$$
+* **Caution! python and NumPy's indices start from 0. That is, to get the first element in a vector, the index is 0 rather than 1.**
 
 * If you use Windows, we recommend that you run the code in the Windows command line. You may use `py -3` instead of `python3` to run the code.
 
@@ -82,7 +82,7 @@ In this homework, you are to implement principal component analysis (PCA) for di
 * You will implement PCA in this question. You are to amend your implementation into `DR.py`.
 
 * There are many sub-functions in `DR.py`. You can ignore all of them but `def PCA(X, out_dim)` and `main(args)`. In `main(args)`, you will see a general pipeline of machine learning: <br/>
-  - Loading data: `X, phi = data_loader(args)`, in which `X` is a D-by-N matrix (numpy array) and each column is a data instance. You can type `X[:, 0]` to extract the "first" data instance from `X`. ($$Caution! python and numpy's indices start from 0. That is, to get the first element in a vector, the index is 0 rather than 1.$$) To ensure that `X[:, 0]` is a column vector, you may do `X[:, 0].reshape(-1, 1)`, which will give you a column vector of size D-by-1. <br/>
+  - Loading data: `X, phi = data_loader(args)`, in which `X` is a D-by-N matrix (numpy array) and each column is a data instance. You can type `X[:, 0]` to extract the "first" data instance from `X`. (**Caution! python and numpy's indices start from 0. That is, to get the first element in a vector, the index is 0 rather than 1.**) To ensure that `X[:, 0]` is a column vector, you may do `X[:, 0].reshape(-1, 1)`, which will give you a column vector of size D-by-1. <br/>
   - Learning patterns: `mu, W = PCA(np.copy(X), out_dim)`, in which the code takes `X` and the desired output dimensions as input and output the mean vector `mu` and the projection matrix (numpy array) `W`.
   - Apply the learned patterns to the data: which will be part of your job to implement.
   
