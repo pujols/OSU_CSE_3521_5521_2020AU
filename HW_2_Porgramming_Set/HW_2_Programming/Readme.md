@@ -68,9 +68,9 @@ In this homework, you are to implement principal component analysis (PCA) for di
 
 * If you are not familiar with Numpy, we recommend that you read this [tutorial] (https://cs231n.github.io/python-numpy-tutorial/) or some other tutorials online, and then play with some code to get familiar with it.
 
-* We have provided some useful Numpy operations that you may want to use in `numpy_example.py`. You may want to comment out all the lines first, and execute them one by one or in a group to see the results and the differences. You can run the command `python 3 numpy_example.py`.
+* We have provided some useful Numpy operations that you may want to use in `numpy_example.py`. You may want to comment out all the lines first, and execute them one by one or in a group to see the results and the differences. You can run the command `python3 numpy_example.py`.
 
-* We also provide another python script `feature_normalization.py`, which will guide you through L2 normalization, covariance matrices, z-score, and whitening. You may find some code here helpful for your implementation. You can run the command `python 3 feature_normalization.py`.
+* We also provide another python script `feature_normalization.py`, which will guide you through L2 normalization, covariance matrices, z-score, and whitening. You may find some code here helpful for your implementation. You can run the command `python3 feature_normalization.py`.
 
 * In `DR.py` and `LR.py`, we also provide some more instructions and hints for what functions or operations you may want to use.
 
