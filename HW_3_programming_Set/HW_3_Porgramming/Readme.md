@@ -65,7 +65,7 @@ The directory structure of the [data](./NaiveBayes/data-sentiment/) folder is gi
 
 # NaiveBayes Classification (100 pts)
 
-* You will implement NaiveBayes in this question. You are to amend your implementation into [`NaiveBayes.py`](./NaiveBayes/NaiveBayes.py).
+* You will implement NaiveBayes in this question. You are to amend your implementation into [`NaiveBayes.py`](./NaiveBayes/NaiveBayes.py). You have to first represent each sentence by a binary bag of word (BoW) vector. That is, a vector recording if a unique word (e.g., "good") shows up in a sentence. See the following slides for more details.
 
 * There are many sub-functions in  [`NaiveBayes.py`](./NaiveBayes/NaiveBayes.py). You can ignore all of them except the following two:
 	* [`def train(self, training_sentences, training_labels):`](./NaiveBayes/NaiveBayes.py#L94)
@@ -80,7 +80,9 @@ The directory structure of the [data](./NaiveBayes/data-sentiment/) folder is gi
 		
 		* Debugging Tips: print the variable [`label_probability`](./NaiveBayes/NaiveBayes.py#L138) and check if it is returning the expected values.
 
-* Helpful Resource: [HW_3_How_To.pptx](./HW_3_How_To.pptx)
+* **You may create a function in [`class NaiveBayesClassifier(object):`](./NaiveBayes/NaiveBayes.py#L60) to build the binary BoW representation for each sentence.**
+
+* Detailed instruction: [HW_3_How_To.pptx](./HW_3_How_To.pptx)
   
 
 ## Auto grader:
