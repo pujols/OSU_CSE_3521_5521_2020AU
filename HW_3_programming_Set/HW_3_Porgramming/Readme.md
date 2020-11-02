@@ -75,7 +75,7 @@ The directory structure of the [data](./NaiveBayes/data-sentiment/) folder is gi
 
 		* Debugging Tips: print the variable `self.prior` and check if it is storing the the expected probablity values for that class.
 
-	* [`def predict(self, test_sentence):`](./NaiveBayes/NaiveBayes.py#L121). 
+	* [`def predict(self, test_sentence):`](./NaiveBayes/NaiveBayes.py#L119). 
 		* You have the find the log probality (see details in the following PPT slides) for each label for the given `test_sentence` and store them in the `label_probability` variable. Remember we have 3 labels in this dataset: Positive(+1), Negative(-1), Neutral (0).
 		
 		* Debugging Tips: print the variable [`label_probability`](./NaiveBayes/NaiveBayes.py#L138) and check if it is returning the expected values.
