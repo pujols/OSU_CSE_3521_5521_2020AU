@@ -2,7 +2,7 @@
 
 ## Submission instructions
 
-* Due date and time: November 20 (Monday), 11:59 pm ET
+* Due date and time: November 18 (Wednesday), 11:59 pm ET
 
 * Carmen submission: 
 Submit a .zip file named `name.number.zip` (e.g., `chao.209.zip`), which contains the following files
@@ -18,8 +18,7 @@ Submit a .zip file named `name.number.zip` (e.g., `chao.209.zip`), which contain
 
 * You will see a [`data-sentiment`](`NaiveBayes/data-sentiment/`) folder inside the  [`NaiveBayes/`](./NaiveBayes/) directory, which contains train data (`train/Positive.txt`, `train/Neutral.txt`, `train/Negative.txt`) and the test data (`test/Positive.txt`, `test/Neutral.txt`, `test/Negative.txt`).
 
-
-* Please use python3 and write your own solutions from scratch. 
+* Please use python3 and write your own solutions from scratch. You may need NumPy.
 
 * **Caution! python and NumPy's indices start from 0. That is, to get the first element in a vector, the index is 0 rather than 1.**
 
@@ -50,7 +49,6 @@ The directory structure of the [data](./NaiveBayes/data-sentiment/) folder is gi
 		    └── Positive.txt
 ```
 
-
 * The [train](./NaiveBayes/data-sentiment/train/) sub-folder contains the data for training your Naive Bayes model. 
 	* There are 3098 total sentences in the train data. 
 	* [Negative.txt](./NaiveBayes/data-sentiment/train/Negative.txt) file cotnains 893 tweets with Negative Sentiment
@@ -65,24 +63,22 @@ The directory structure of the [data](./NaiveBayes/data-sentiment/) folder is gi
 	* [Positive.txt](./NaiveBayes/data-sentiment/test/Positive.txt) file cotnains 237 tweets with Positive Sentiment
 
 
-
-
-# NaiveBayes Classification (50 pts)
+# NaiveBayes Classification (100 pts)
 
 * You will implement NaiveBayes in this question. You are to amend your implementation into [`NaiveBayes.py`](./NaiveBayes/NaiveBayes.py).
 
 * There are many sub-functions in  [`NaiveBayes.py`](./NaiveBayes/NaiveBayes.py). You can ignore all of them except the following two:
-	* [`def train(self, training_sentences, training_labels):`](./NaiveBayes/NaiveBayes.py#L95)
-		* You need to find the log probabiltiy each label and save them in `self.logprior`, so that `self.logprior[-1]` will store the value of the log probablity of Negative Sentitment.
+	* [`def train(self, training_sentences, training_labels):`](./NaiveBayes/NaiveBayes.py#L94)
+		* You need to estimate the parameters of the probabiltiy of each class label and save them in `self.prior`. You may use any data structure (e.g., list, NumPy array).
 
-		* You need to find the log probabiltiy of a word being in a class `c` and save them in `self.loglikelihoods`, so that `self.loglikelihoods[-1]["bad"]` will store the value of the log probablity of seeing the word "bad" in sentence with Negative Sentitment.
+		* You need to estimate the parameters of the conditional probabiltiy of each unique word being in a class `c` and save them in `self.conditional`. You may use any data structure (e.g., list, NumPy array). For example, you can create a NumPy array `self.conditional`, where `self.conditional[i][j]` records the conditional probability of seeing the "j-th" unique word in the dictionary in sentences of the "i-th" class.
 
-		* Debugging Tips: print the variable `self.logprior` and check if it is storing the the expected log probablity values for that class.
+		* Debugging Tips: print the variable `self.prior` and check if it is storing the the expected probablity values for that class.
 
 	* [`def predict(self, test_sentence):`](./NaiveBayes/NaiveBayes.py#L121). 
-		* You have the find the log probality for each label for the given `test_sentence` and store them in the `label_probability` variable. Remember we have 3 labels in this dataset: Positive(+1), Negative(-1), Neutral (0).
+		* You have the find the log probality (see details in the following PPT slides) for each label for the given `test_sentence` and store them in the `label_probability` variable. Remember we have 3 labels in this dataset: Positive(+1), Negative(-1), Neutral (0).
 		
-		* Debugging Tips: print the variable [`label_probability`](./NaiveBayes/NaiveBayes.py#L137) and check if it is returning the expected values.
+		* Debugging Tips: print the variable [`label_probability`](./NaiveBayes/NaiveBayes.py#L138) and check if it is returning the expected values.
 
 * Helpful Resource: [HW_3_How_To.pptx](./HW_3_How_To.pptx)
   
@@ -91,6 +87,8 @@ The directory structure of the [data](./NaiveBayes/data-sentiment/) folder is gi
 
 * You may run the following command to test your implementation<br/>
 `python3 NaiveBayes.py`<br/>
+
+You should have the Accuracy around 74%.
 
 * Note that, the auto grader is to check your implementation semantics. If you have syntax errors, you may get python error messages before you can see the auto_graders' results.
 
