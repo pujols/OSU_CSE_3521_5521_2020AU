@@ -6,9 +6,11 @@
 
 * Carmen submission: 
 Submit a .zip file named `name.number.zip` (e.g., `chao.209.zip`), which contains the following files
-  - your completed python script `NaiveBayes.py` 
+  - your completed python script `NaiveBayes.py`
+  - your improved python script `NaiveBayes_improved.py` (see **NaiveBayes Classification: improvement (20 pts)** below)
+  - A short report (no more than one page), saved as a pdf named `name.number.pdf` (see **What to submit** at the end)
  
-* Collaboration: You may discuss the homework with your classmates. However, you need to write your own solutions and submit them separately. In your submission, you need to list with whom you have discussed the homework. Please list each classmate's name and name.number (e.g., Wei-Lun Chao, chao.209) as a row at the end of `NaiveBayes.py`. Please consult the syllabus for what is and is not acceptable collaboration.
+* Collaboration: You may discuss the homework with your classmates. However, you need to write your own solutions and submit them separately. In your submission, you need to list with whom you have discussed the homework. Please list each classmate's name and name.number (e.g., Wei-Lun Chao, chao.209) as a row at the end of `NaiveBayes.py` and in the short report. Please consult the syllabus for what is and is not acceptable collaboration.
 
 ## Implementation instructions
 
@@ -63,7 +65,7 @@ The directory structure of the [data](./NaiveBayes/data-sentiment/) folder is gi
 	* [Positive.txt](./NaiveBayes/data-sentiment/test/Positive.txt) file cotnains 237 tweets with Positive Sentiment
 
 
-# NaiveBayes Classification (100 pts)
+# NaiveBayes Classification (80 pts)
 
 * You will implement NaiveBayes in this question. You are to amend your implementation into [`NaiveBayes.py`](./NaiveBayes/NaiveBayes.py). You have to first represent each sentence by a binary bag of word (BoW) vector. That is, a vector recording if a unique word (e.g., "good") shows up in a sentence. See the following slides for more details.
 
@@ -90,17 +92,38 @@ The directory structure of the [data](./NaiveBayes/data-sentiment/) folder is gi
 * You may run the following command to test your implementation<br/>
 `python3 NaiveBayes.py`<br/>
 
-You should have the Accuracy around 74%.
+* You might see a warning like `RuntimeWarning: divide by zero encountered in log`. No worries for now. Your code will proceed to output the results.
+
+* You should have the Accuracy around least 74%. 
 
 * Note that, the auto grader is to check your implementation semantics. If you have syntax errors, you may get python error messages before you can see the auto_graders' results.
 
 * Again, the auto_grader is just to simply check your implementation. It may not be used for your final grading.
 
 
+# NaiveBayes Classification: improvement (20 pts)
+
+As mentioned above, you may see `RuntimeWarning: divide by zero encountered in log`.
+
+* Now, can you think of a way to resolve this warning, and according get even higher accuracy?
+
+* Hint: think about what causes the warning, and what this warning means for a tese sentence. We talked about pseduo count in the class in estimating the parameters. Do you think it will help resolve the problem?
+
+* TODO: 
+	* Make a copy of your completed `python3 NaiveBayes.py`, and name the copy as `NaiveBayes_improved.py`.
+	* Implement your solution for `RuntimeWarning: divide by zero encountered in log` in `NaiveBayes_improved.py`. Note that, changing the python output option to block the warning is not a solution here.
+	* Write in `name.number.pdf` a short paragraph of what your solution is.
+	
+* After implementation, you may run the following command to test your implementation<br/>
+`python3 NaiveBayes_improved.py`<br/>
+
+You should exactly the same output format as `python3 NaiveBayes.py`, but the resulting accuracy may improve.
 
 
 # What to submit:
 
-* Your completed python script `NaiveBayes.py`
+* Your completed python script `NaiveBayes.py`. 
+* Your improved python script `NaiveBayes_improved.py`.
+* Your report `name.number.pdf`. The report should contain the following four answers: **(1)** the output from `python3 NaiveBayes.py` (i.e., accuracy; how many are correct), **(2)** the output from `python3 NaiveBayes_improved.py` (i.e., accuracy; how many are correct), **(3)** a short paragraph of what you did in `python3 NaiveBayes_improved.py`, **(4)** any other students you collaborate with.
 
 
