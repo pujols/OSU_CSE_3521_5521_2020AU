@@ -107,7 +107,7 @@ As mentioned above, you may see `RuntimeWarning: divide by zero encountered in l
 
 * Now, can you think of a way to resolve this warning, and according get even higher accuracy?
 
-* Hint: think about what causes the warning, and what this warning means for a tese sentence. We talked about pseduo count in the class in estimating the parameters. Do you think it will help resolve the problem?
+* Hint: think about what causes the warning, and what this warning means for a test sentence. We talked about pseduo count in the class in estimating the parameters. Do you think it will help resolve the problem?
 
 * TODO: 
 	* Make a copy of your completed `python3 NaiveBayes.py`, and name the copy as `NaiveBayes_improved.py`.
@@ -117,7 +117,7 @@ As mentioned above, you may see `RuntimeWarning: divide by zero encountered in l
 * After implementation, you may run the following command to test your implementation<br/>
 `python3 NaiveBayes_improved.py`<br/>
 
-You should exactly the same output format as `python3 NaiveBayes.py`, but the resulting accuracy may improve.
+You should see exactly the same output format as `python3 NaiveBayes.py`, but the resulting accuracy may improve.
 
 
 # What to submit:
