@@ -125,5 +125,4 @@ You should see exactly the same output format as `python3 NaiveBayes.py`, but th
 * Your completed python script `NaiveBayes.py`. 
 * Your improved python script `NaiveBayes_improved.py`.
 * Your report `name.number.pdf`. The report should contain the following four answers: **(1)** the output from `python3 NaiveBayes.py` (i.e., accuracy; how many are correct), **(2)** the output from `python3 NaiveBayes_improved.py` (i.e., accuracy; how many are correct), **(3)** a short paragraph of what you did in `python3 NaiveBayes_improved.py`, **(4)** any other students you collaborate with.
-
-
+* Please follow **Submission instructions** to submit a .zip file named name.number.zip (e.g., chao.209.zip), which contains the above three files.
