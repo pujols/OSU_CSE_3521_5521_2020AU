@@ -165,8 +165,8 @@ def main(args):
 
     training_accuracy = Accuracy(X_train, Y_train, w)
     test_accuracy = Accuracy(X_test, Y_test, w)
-    print("Accuracy Logistic Regression training set: ", training_accuracy)
-    print("Accuracy Logistic Regression test set: ", test_accuracy)
+    print("Accuracy: training set: ", training_accuracy)
+    print("Accuracy: test set: ", test_accuracy)
     
 
 if __name__ == "__main__":
