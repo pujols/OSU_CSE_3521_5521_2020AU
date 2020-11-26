@@ -34,6 +34,8 @@ Submit a .zip file named `name.number.zip` (e.g., `chao.209.zip`), which contain
 
 In this homework, you are to implement logistic regression and perceptron algorithms for binary linear classification.
 
+We have provided slides for implementation details in [`HW-4.ppt`](./HW-4.ppt)
+
 
 ## Data: 
 
