@@ -61,10 +61,10 @@ Recall the logistic regression algorithm that we have discussed in class. Your t
 
 * There are many sub-functions in  [`Linear_Classifiers.py`](./Linear_Classifiers.py). You can ignore all of them except the following two:
 	* [`def Logisitc_Regression(X, Y, learningRate=0.01, maxIter=100):`](./Linear_Classifiers.py#L90)
-    * Your implementation should go to [`####### TODO: implement logistic regression`](./Linear_Classifiers.py#L107). **Your implementation should be fewer than 10 lines.**
-
-  * [`def sigmoid(a):`](./Linear_Classifiers.py#L86)
-    * This is the element-wise sigmoid function that you may find useful. The function takes a value, a vector, or a matrix as input and perform the sigmoid fuction to each element independently. 
+    		* Your implementation should go to [`####### TODO: implement logistic regression`](./Linear_Classifiers.py#L107). **Your implementation should be fewer than 10 lines.**
+	
+	* [`def sigmoid(a):`](./Linear_Classifiers.py#L86)
+    		* This is the element-wise sigmoid function that you may find useful. The function takes a value, a vector, or a matrix as input and perform the sigmoid fuction to each element independently. 
 
 * After your implementation, you can run
 
@@ -96,7 +96,7 @@ Recall the perceptron algorithm that we have discussed in class. Your task will 
 
 * There are many sub-functions in  [`Linear_Classifiers.py`](./Linear_Classifiers.py). You can ignore all of them except the following one:
 	* [def Perceptron(X, Y, learningRate=0.01, maxIter=100):](./Linear_Classifiers.py#L116)
-    * Your implementation should go to [`####### TODO: implement perceptron`](./Linear_Classifiers.py#L138). **Your implementation should be fewer than 10 lines.**
+	* Your implementation should go to [`####### TODO: implement perceptron`](./Linear_Classifiers.py#L138). **Your implementation should be fewer than 10 lines.**
 
 * After your implementation, you can run
 
