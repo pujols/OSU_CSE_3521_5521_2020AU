@@ -1,4 +1,4 @@
-# Homework-4
+# Homework-4: Logistic Regression and Perceptron
 
 ## Submission instructions
 
