@@ -66,7 +66,7 @@ Recall the logistic regression algorithm that we have discussed in class. Your t
 	
 	* [`def sigmoid(a):`](./Linear_Classifiers.py#L86)
     		
-		* This is the element-wise sigmoid function that you may find useful. The function takes a value, a vector, or a matrix as input and perform the sigmoid fuction to each element independently. 
+		* This is the element-wise sigmoid function that you may find useful. The function takes a value, a vector, or a matrix as input and performs the sigmoid fuction to each element independently. 
 
 * After your implementation, you can run
 
