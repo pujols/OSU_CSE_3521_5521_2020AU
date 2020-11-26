@@ -2,7 +2,7 @@
 
 ## Submission instructions
 
-* Due date and time: December 4 (Wednesday), 23:59 ET
+* Due date and time: December 4 (Friday), 23:59 ET
 
 * Carmen submission: 
 Submit a .zip file named `name.number.zip` (e.g., `chao.209.zip`), which contains the following files
