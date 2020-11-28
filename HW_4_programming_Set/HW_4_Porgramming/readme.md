@@ -131,4 +131,4 @@ You will see your accuracy around
 	* **(3)** the output from `python3 Linear_Classifiers.py --data simple --algorithm perceptron` (i.e., training and test accuracy),
 	* **(4)** the output from `python3 Linear_Classifiers.py --data starplus --algorithm perceptron` (i.e., training and test accuracy),
 	* **(5)** any other students you collaborate with.
-* Please follow **Submission instructions** to submit a .zip file named name.number.zip (e.g., chao.209.zip), which contains the above three files.
+* Please follow **Submission instructions** to submit a .zip file named name.number.zip (e.g., chao.209.zip), which contains the above two files.
